@@ -1,0 +1,25 @@
+#itemList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#itemList li {
+    margin: 5px 0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+}
+
+#itemList button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#itemInput {
+    padding: 5px;
+    margin-right: 5px;
+}

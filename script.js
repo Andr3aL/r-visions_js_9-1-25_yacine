@@ -105,6 +105,17 @@ function create() {
     input.value = "";
     // remettre le focus sur l'input
     input.focus();
+  } 
+  // Ajout de Kader. Le else 
+  else {
+    input.style.border = "2px solid red";
+    let error = document.createElement("p");
+    error.textContent = "Entrée invalide !";
+    error.style.color = "red";
+    error.style.fontWeight = "bold";
+    console.log(error);
+
+    document.body.insertBefore(error, liste);
   }
 }
 // Ajouter de l'evenement pour la touche Entrée
@@ -113,6 +124,3 @@ document.querySelector("#itemInput").addEventListener("keypress", (e) => {
     create();
   }
 });
-
-
-
